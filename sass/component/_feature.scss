@@ -1,0 +1,130 @@
+.feature-section {
+  padding: 0rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &__line {
+    border-top: 1px solid $secondary-color;
+    width: 3rem;
+    margin-top: 0.2rem;
+  }
+  &__recommended {
+    color: $secondary-color;
+    display: flex;
+    gap: 1rem;
+  }
+  &__tab-section {
+    padding: 0rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tab-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    :first-child {
+      border: none;
+      background-color: $primary-light;
+      color: $primary-dark;
+    }
+    :not(:first-child) {
+      border: 1px solid $primary-dark;
+      background-color: transparent;
+      color: $primary-dark;
+    }
+    &__btn-1,
+    &__btn-2,
+    &__btn-3 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+  }
+  &__icon-section {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    &__btn {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: none;
+      background-color: transparent;
+    }
+    &__btn-1 {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+    }
+    &__btn-2 {
+      background-color: $primary-color;
+    }
+  }
+  &__card-section {
+    color: $text-color;
+    margin-left: 4rem;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: relative;
+      &__chip {
+        border-radius: 1rem;
+        color: $color-danger;
+        background-color: #ffe2e2;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        position: absolute;
+        bottom: 10rem;
+        left: 1.8rem;
+        &__chip-2 {
+          background-color: $info-color-light;
+          color: $info-color;
+        }
+        &__chip-3 {
+          background-color: $primary-light;
+          color: $primary-dark;
+        }
+      }
+      &__card-body {
+        font-weight: 600;
+        h3 {
+          font-size: 1.6rem;
+        }
+        p {
+          color: $color-grey;
+          font-size: 1.2rem;
+        }
+      }
+      &__card-footer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        p {
+          color: $color-grey;
+          font-size: 0.8rem;
+        }
+        h3 {
+          color: $text-color;
+          white-space: nowrap;
+        }
+      }
+      &__img {
+        border-radius: 2rem;
+      }
+    }
+  }
+}
