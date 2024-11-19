@@ -1,0 +1,77 @@
+.testimonial-section {
+  width: 100%;
+  padding: 2rem 0rem;
+  &__content {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    &__line {
+      width: 3rem;
+      border-top: 1px solid $secondary-color;
+    }
+    h1 {
+      color: $text-color;
+      margin-top: 1rem;
+    }
+    p {
+      color: $secondary-color;
+    }
+  }
+  &__carousel {
+    padding-bottom: 5rem;
+    display: flex;
+    gap: 0rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &__carousel-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 30rem;
+      padding: 2rem;
+      &__img1 {
+        border-radius: 0.5rem;
+      }
+
+      &__review-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        padding: 2rem;
+        background-color: $color-white;
+        position: absolute;
+        max-width: 75%;
+        border-radius: 1rem;
+        bottom: -3rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        h2 {
+          font-size: 1.3rem;
+        }
+        p {
+          color: $color-grey;
+          line-height: 1.6rem;
+        }
+        &__user-details {
+          display: flex;
+          justify-content: space-between;
+          &__rating {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.6rem;
+            color: $text-color;
+            p {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
